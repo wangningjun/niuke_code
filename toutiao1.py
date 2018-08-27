@@ -1,21 +1,27 @@
-n = int(input())
-A = map(int,input().split())
+# n = int(input())
+# A = list(map(int,input().split()))
+n = 4
+A = [20,35,23,40]
 
-B = [i for i in A]
 
-B.sort()
-B.append(200)
+A.sort()
+A.append(200)
+print(A,len(A))
+
 count =0
 j = 0
-for i in range(1,len(B)):
-    if(B[i]-B[i-1])<=10 :
+for i in range(1,len(A)):
+    if(A[i]-A[i-1])<=10 :
         j+=1
     else:
-        if j%3==2:
+        if j % 3 == 0:
             count = count+2
-        if j%3==1:
             j = 0
-        if j%3==0:
-            count = count+1
+        if j % 3 == 1:
+            count = count + 1
+            j =0
+        if j%3==2:
+            j = 0
+
 
 print(count)
