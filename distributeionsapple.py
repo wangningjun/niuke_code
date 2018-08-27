@@ -11,14 +11,15 @@ A = [2, 76, 20, 6, 20, 10, 18, 34, 44, 2, 14, 30, 4, 84, 16, 4, 20, 10, 60, 10, 
 
 len_a = len(A)
 count = 0
-if len_a % n != 0:
+sum_a = sum(A)
+if sum_a % n != 0:
 	print(-1)
 else:
-	av = len_a / n
+	av = sum_a / n
 	for a in A:
 		if (a - av) % 2 != 0:
 			print(-1)
-			break
+			exit()   # 结束程序
 		else:
 			count += abs(a - av)
-	print(count / 4)
+	print(int(count / 4))
