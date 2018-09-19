@@ -11,7 +11,7 @@ def lcm(x, y,z):
             lcm = 1
             break
         greater += 1
-        if greater>=x*y+z:
+        if greater >= x*y+z:
             lcm = 0
             break
     return lcm
@@ -34,5 +34,6 @@ if __name__ == '__main__':
             print('Yes')
         else:
             print('No')
-
+    # a = list(map(int,sys.stdin.readline().strip().split()))
+    # print(a)
 
