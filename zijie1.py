@@ -1,3 +1,6 @@
+'''
+完全AC
+'''
 class Solution(object):
     def simplifyPath(self, path):
         """

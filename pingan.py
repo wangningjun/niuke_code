@@ -1,5 +1,9 @@
 import sys
 
+'''
+完全AC
+'''
+
 def versionCompare(v1, v2):
 
     v1_list = v1.split(".")

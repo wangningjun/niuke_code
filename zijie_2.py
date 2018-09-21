@@ -1,4 +1,7 @@
 import sys
+'''
+完全AC
+'''
 def CommonPrefix(strs):
     if not strs:
         return ''
